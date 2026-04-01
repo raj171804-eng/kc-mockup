@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Knowledge Check</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="admin-dashboard">
+            <div class="header">
+                <h1>Admin Dashboard</h1>
+                <button class="btn btn-secondary logout-btn" onclick="logout()">Logout</button>
+            </div>
+            
+            <div class="welcome-section">
+                <h2>Knowledge Check Analytics</h2>
+                <p class="subtitle">Service Desk Team Performance Overview</p>
+            </div>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">78%</div>
+                    <div class="metric-label">Overall KC Pass Rate</div>
+                    <div class="metric-trend positive">↑ 5% from last cycle</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-value">1.8</div>
+                    <div class="metric-label">Average Attempts to Pass</div>
+                    <div class="metric-trend neutral">→ No change</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-value">42</div>
+                    <div class="metric-label">Total Agents Tested</div>
+                    <div class="metric-trend positive">↑ 3 new agents</div>
+                </div>
+                
+                <div class="metric-card">
+                    <div class="metric-value">85%</div>
+                    <div class="metric-label">Completion Rate</div>
+                    <div class="metric-trend positive">↑ 2% improvement</div>
+                </div>
+            </div>
+            
+            <div class="analytics-section">
+                <div class="analytics-card">
+                    <h3>Most Failed Topics</h3>
+                    <div class="failed-topics">
+                        <div class="topic-item">
+                            <span class="topic-name">Password Reset SOP</span>
+                            <span class="topic-fail-rate">68% fail rate</span>
+                        </div>
+                        <div class="topic-item">
+                            <span class="topic-name">SLA Compliance</span>
+                            <span class="topic-fail-rate">45% fail rate</span>
+                        </div>
+                        <div class="topic-item">
+                            <span class="topic-name">Remote Support Tools</span>
+                            <span class="topic-fail-rate">32% fail rate</span>
+                        </div>
+                        <div class="topic-item">
+                            <span class="topic-name">Escalation Procedures</span>
+                            <span class="topic-fail-rate">28% fail rate</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="analytics-card">
+                    <h3>Performance Trends</h3>
+                    <div class="trend-content">
+                        <div class="trend-item">
+                            <h4>Positive Indicators</h4>
+                            <ul>
+                                <li>KC pass rate increased compared to last cycle</li>
+                                <li>Average completion time reduced by 15%</li>
+                                <li>More agents passing on first attempt</li>
+                            </ul>
+                        </div>
+                        <div class="trend-item">
+                            <h4>Areas for Improvement</h4>
+                            <ul>
+                                <li>Password Reset SOP needs additional training</li>
+                                <li>SLA awareness requires reinforcement</li>
+                                <li>New agent onboarding program review needed</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="recommendations-section">
+                <h3>Recommendations</h3>
+                <div class="recommendations">
+                    <div class="recommendation-item">
+                        <strong>Training Focus:</strong> Conduct refresher training on Password Reset SOPs
+                    </div>
+                    <div class="recommendation-item">
+                        <strong>SLA Workshop:</strong> Mandatory workshop on service level agreements
+                    </div>
+                    <div class="recommendation-item">
+                        <strong>Peer Mentoring:</strong> Pair struggling agents with top performers
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>

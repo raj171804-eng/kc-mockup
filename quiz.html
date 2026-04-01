@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Check Quiz</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="quiz-card">
+            <div class="header">
+                <h1>Knowledge Check</h1>
+                <button class="btn btn-secondary logout-btn" onclick="logout()">Logout</button>
+            </div>
+            
+            <div class="quiz-info">
+                <p>Answer all questions below. Pass mark: 80%</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+            
+            <form id="quizForm">
+                <!-- Question 1 -->
+                <div class="question-block">
+                    <h3>Question 1 of 5</h3>
+                    <p class="question-text">What is the first step when a user reports a password reset issue?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q1" value="a">
+                            <span>Directly reset the password</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q1" value="b">
+                            <span>Verify user identity through security questions</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q1" value="c">
+                            <span>Escalate to team lead</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q1" value="d">
+                            <span>Create a new ticket</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Question 2 -->
+                <div class="question-block">
+                    <h3>Question 2 of 5</h3>
+                    <p class="question-text">Which information should NOT be collected during initial troubleshooting?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q2" value="a">
+                            <span>User's password</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q2" value="b">
+                            <span>Error messages displayed</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q2" value="c">
+                            <span>Steps taken before issue occurred</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q2" value="d">
+                            <span>System specifications</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Question 3 -->
+                <div class="question-block">
+                    <h3>Question 3 of 5</h3>
+                    <p class="question-text">What is the standard response time for Priority 1 tickets?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q3" value="a">
+                            <span>24 hours</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q3" value="b">
+                            <span>1 hour</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q3" value="c">
+                            <span>4 hours</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q3" value="d">
+                            <span>8 hours</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Question 4 -->
+                <div class="question-block">
+                    <h3>Question 4 of 5</h3>
+                    <p class="question-text">Which tool is primarily used for remote desktop support?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q4" value="a">
+                            <span>Microsoft Teams</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q4" value="b">
+                            <span>TeamViewer</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q4" value="c">
+                            <span>Email</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q4" value="d">
+                            <span>Phone call</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Question 5 -->
+                <div class="question-block">
+                    <h3>Question 5 of 5</h3>
+                    <p class="question-text">What should you do if you cannot resolve an issue within the SLA?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q5" value="a">
+                            <span>Close the ticket</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q5" value="b">
+                            <span>Escalate to the appropriate team</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q5" value="c">
+                            <span>Ask the user to wait longer</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q5" value="d">
+                            <span>Try the same solution again</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="submit-section">
+                    <button type="submit" class="btn btn-primary btn-large">Submit Knowledge Check</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>

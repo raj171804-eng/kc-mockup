@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Check Results</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="result-card">
+            <div class="header">
+                <h1>Knowledge Check Results</h1>
+                <button class="btn btn-secondary logout-btn" onclick="logout()">Logout</button>
+            </div>
+            
+            <div class="result-section">
+                <div class="score-display">
+                    <div class="score-circle" id="scoreCircle">
+                        <span class="score-number" id="scoreNumber">0%</span>
+                    </div>
+                </div>
+                
+                <div class="status-message" id="statusMessage">
+                    <!-- Status will be populated by JavaScript -->
+                </div>
+                
+                <div class="details-section" id="detailsSection">
+                    <!-- Details will be populated by JavaScript -->
+                </div>
+                
+                <div class="action-section" id="actionSection">
+                    <!-- Action buttons will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Dashboard - Knowledge Check</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dashboard-card">
+            <div class="header">
+                <h1>Agent Dashboard</h1>
+                <button class="btn btn-secondary logout-btn" onclick="logout()">Logout</button>
+            </div>
+            
+            <div class="welcome-section">
+                <h2 id="welcomeMessage">Welcome back!</h2>
+                <p class="subtitle">Service Desk Knowledge Check System</p>
+            </div>
+            
+            <div class="status-section">
+                <h3>Last Knowledge Check Status</h3>
+                <div class="status-grid">
+                    <div class="status-item">
+                        <span class="status-label">Last Score:</span>
+                        <span class="status-value score-failed">70%</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Status:</span>
+                        <span class="status-value status-failed">FAILED</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="action-section">
+                <p class="retake-message">You need to retake the Knowledge Check to meet the 80% pass requirement.</p>
+                <button class="btn btn-primary btn-large" onclick="startKnowledgeCheck()">
+                    Start Knowledge Check
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
